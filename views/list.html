@@ -1,0 +1,16 @@
+<h1>Drops</h1>
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>time</th>
+    </tr>
+  </thead>
+  <tbody>
+    % for drop in drops:
+    <tr>
+      <td><a href="{{get_url('get', id=drop['id'])}}">{{drop['id']}}</a></td>
+      <td>{{drop['time']}}</td>
+    </tr>
+  </tbody>
+</table>
